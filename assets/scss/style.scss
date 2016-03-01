@@ -1,8 +1,268 @@
 
+$fz_footer:13px;
+$fz_figcap:13px;
 
-header　{
-    margin:0 auto;
-    width:900px;
+/******************** base ********************/
+body {
+    font-size: 16px;
+    line-height: 1.5em;
 }
 
-/*.news newsのbg設定*/
+
+.wrapper {
+width:960px;
+margin:0 auto;
+padding: 1px;
+}
+
+/******************** header ********************/
+
+header {
+    position: relative;
+    margin:0;
+}
+header h1.logo{
+    width: 141px;
+    height: 70px;
+}
+ul.util_nav {
+    position: absolute;
+    top:10px;
+    right: 5px;
+    list-style-type: none;
+    overflow: hidden;
+    font-size: $fz_footer;
+    li {
+        float: left;
+        padding:15px;
+        }
+}
+
+/******************** nav ********************/
+nav {
+    margin:0;
+    padding: 0;
+}
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    width:900px;
+    margin: 0;
+    padding: 0;
+        li {
+        float: left;
+        text-indent: -9999px;
+                a {
+            display: block;
+            height: 45px;
+            background-color:gray;
+            }
+    }
+}
+li.home a{width:81px;}
+li.organic a{width:131px;}
+li.event a{width:177px;}
+li.gardening a{width:131px;}
+li.recipi a{width:154px;}
+li.products a{width:97px;}
+li.contact a{width:129px;}
+
+/****** normal ******/
+li.home a {
+background: url("../images/btn_home.gif") 0 0 no-repeat;
+}
+li.organic a {
+background: url("../images/btn_organic.gif") 0 0 no-repeat;
+}
+li.event a {
+background: url("../images/btn_event.gif") 0 0 no-repeat;
+}
+li.gardening a {
+background: url("../images/btn_gardening.gif") 0 0 no-repeat;
+ }
+ li.recipi a {
+background: url("../images/btn_recipi.gif") 0 0 no-repeat;
+}
+li.products a {
+background: url("../images/btn_products.gif") 0 0 no-repeat;
+}
+li.contact a {
+background: url("../images/btn_contact.gif") 0 0 no-repeat;
+}
+
+/****** current ******/
+.index li.home a {
+    background: url("../images/c/btn_home.gif") 0 0 no-repeat;
+}
+.organic li.organic a {
+    background: url("../images/c/btn_organic.gif") 0 0 no-repeat;
+}
+.event li.event a {
+background: url("../images/c/btn_event.gif") 0 0 no-repeat;
+}
+.gardening li.gardening a {
+background: url("../images/c/btn_gardening.gif") 0 0 no-repeat;
+ }
+.recipi li.recipi a {
+background: url("../images/c/btn_recipi.gif") 0 0 no-repeat;
+}
+.products li.products a {
+background: url("../images/c/btn_products.gif") 0 0 no-repeat;
+}
+.contact li.contact a {
+background: url("../images/c/btn_contact.gif") 0 0 no-repeat;
+}
+
+/****** hover ******/
+.index li.home a:hover {
+    background: url("../images/c/btn_home.gif") 0 0 no-repeat;
+}
+.organic li.organic a:hover {
+    background: url("../images/c/btn_organic.gif") 0 0 no-repeat;
+}
+.event li.event a:hover {
+background: url("../images/c/btn_event.gif") 0 0 no-repeat;
+}
+.gardening li.gardening a:hover {
+background: url("../images/c/btn_gardening.gif") 0 0 no-repeat;
+ }
+.recipi li.recipi a:hover {
+background: url("../images/c/btn_recipi.gif") 0 0 no-repeat;
+}
+.products li.products a:hover {
+background: url("../images/c/btn_products.gif") 0 0 no-repeat;
+}
+.contact li.contact a:hover {
+background: url("../images/c/btn_contact.gif") 0 0 no-repeat;
+}
+
+/******************** mainimg ********************/
+.imgarea {
+overflow: hidden;
+width: 900px;
+margin: 0;
+}
+.main_img {
+width:75%;
+float: left;
+margin-top: 15px;
+margin-right: 15px;
+}
+.boad {
+float: right;
+margin-top: 15px;
+}
+.boad p {
+    text-indent: -9999px;
+}
+.boad a {
+    display: block;
+    background: url("../images/boad.jpg");
+    width: 209px;
+    height: 357px;
+    }
+
+
+
+/********************************** contents **********************************/
+.contents {
+    overflow: hidden;
+    width:900px;
+}
+/********************************** main **********************************/
+main {
+    width: 645px;
+    padding: 20px;
+    background-color: #bbb;
+    float: left;
+
+    .news h2 {
+        margin-top: 0;
+    }
+    .news dt {
+        margin:10px 0;
+    }
+    .news dd {
+        margin:10px 0;
+        border-bottom: 1px dotted gray;
+    }
+}
+
+.blog_diary {
+        overflow: hidden;
+
+        figure {
+         margin:0px;
+        float: left;
+        width:250px;
+
+            figcaption {
+                font-size: $fz_figcap;
+            }
+            img {
+            width:212px;
+            height:283px;
+            }
+
+        }
+        .text {
+            width:350px;
+            margin:0px;
+            float: right;
+        }
+}
+.facebookarea {
+    background-color: #aaa;
+    width:100%;
+    height:250px;
+}
+/************************************* side *************************************/
+aside {
+    width:190px;
+    background-color: #bbb;
+    float: right;
+    padding: 5px;
+    padding-bottom: 32768px;
+    margin-bottom: -32768px;
+
+    .bannerarea {
+        width:200px;
+        margin: 0 auto;
+        background-color: pink;
+        text-align: center;
+        font-size: $fz_footer;
+        .magazine {
+            font-size: $fz_figcap;
+        }
+    }
+}
+
+aside .banner01,aside .banner02 {
+    width: 60%;
+    height:60%;
+}
+.footer {
+    width:100%;
+   background-color: #bbb;
+}
+
+footer {
+    font-size: $fz_footer;
+    position: relative;
+    width:900px;
+    height:150px;
+   background-color: yellow;
+
+    .credit {
+        position: absolute;
+        top:85%;
+        right:10px;
+    }
+}
+    span.link {
+        position: absolute;
+        top:10px;
+        left:10px;
+    }
+
+

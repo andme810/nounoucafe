@@ -51,75 +51,101 @@ $(function(){
         </ul>
     <nav>
         <ul>
-            <li　class="index"><a href="index.html">ホーム</a></li>
-            <li　class="organic"><a href="organic/index.html">有機栽培について</a></li>
-            <li　class="event"><a href="event/index.html">てしごと・農業体験</a></li>
-            <li　class="gardening"><a href="gardening/index.html">野菜の育て方</a></li>
-            <li　class="recipi"><a href="recipi/index.html">LOHASなレシピ</a></li>
-            <li　class="products"><a href="products/index.html">商品一覧</a></li>
-            <li　class="contact"><a href="contact/index.html">お問い合わせ</a></li>
+            <li class="home"><a href="index.html">ホーム</a></li>
+            <li class="organic"><a href="organic/index.html">有機栽培について</a></li>
+            <li class="event"><a href="event/index.html">てしごと・農業体験</a></li>
+            <li class="gardening"><a href="gardening/index.html">野菜の育て方</a></li>
+            <li class="recipi"><a href="recipi/index.html">LOHASなレシピ</a></li>
+            <li class="products"><a href="products/index.html">商品一覧</a></li>
+            <li class="contact"><a href="contact/index.html">お問い合わせ</a></li>
         </ul>
     </nav>
     </header>
 
-    <div class="imgarea">
-        <section class="main_img">
+    <section class="imgarea">
+        <div class="main_img">
          <ul class="bxslider">
               <li><img src="images/photo1.jpg" title="photo1"></li>
               <li><img src="images/photo2.jpg" title="photo2"></li>
          </ul>
-         </section>
-         <section class="boad">
+         </div>
+         <div class="boad">
          <p>3月の旬野菜<br>
             <a href="calender.html" class="calender">旬菜カレンダーを見る</a>
          </p>
-        </section>
-     </div><!-- /imgarea -->
-
+        </div>
+     </section><!-- /imgarea -->
 
 <div class="contents">
     <main>
         <article class="news">
-         <h2>News</h2>
+         <h2>Newsarea</h2>
            <dl>
-                <dt>2016-03-22</dt>
+                <dt><time datetime="2016-03-23">2016-03-23</time></dt>
                 <dd>農場での野菜栽培の様子を掲載しました。</dd>
-                <dt>2016-03-22</dt>
-                <dd>”LOHASなレシピ”に「自家製味噌の作り方」を追加しました。ご自宅で手作り味噌にチャレンジ！</dd>
-                <dt>2016-03-20</dt>
+                <dt><time datetime="2016-03-22">2016-03-22</time></dt>
+                <dd>”LOHASなレシピ”に「自家製味噌の作り方」を追加しました。ご家庭で、手作り味噌にチャレンジしてみませんか。手作り味噌の体験イベントも開催しています。</dd>
+                <dt><time datetime="2016-03-20">2016-03-22</time></dt>
                 <dd>軽井沢のうのうカフェのサイトを開設しました。</dd>
             </dl>
         </article>
         <article class="blog">
-        <h2>野菜の栽培・収穫の様子</h2>
-            <p>
-            <figure>
-                <img src="images/vege/img_003.jpg" alt="">
-                <figcaption>日々の野菜栽培の様子や、手作り料理のアップなど</figcaption>
-            </figure>
-           </p>
+        <h2>blogarea</h2>
+            <time datetime="2016-03-23">2016-03-23</time>
+            <div class="blog_diary">
+                <figure>
+                    <img src="images/vege/img_003.jpg" alt="">
+                    <figcaption>本日の収穫野菜</figcaption>
+                </figure>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officiis accusamus aspernatur esse beatae possimus saepe officia, ipsam, quos laudantium consequatur voluptates debitis unde earum error dolorem, praesentium, corrupti quas!</p>
+            </div>
+
+            <time datetime="2016-03-23">2016-03-23</time>
+            <div class="blog_diary">
+                <figure>
+                    <img src="images/vege/img_002.jpg" alt="">
+                    <figcaption>これでサラダを作ります</figcaption>
+                </figure>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officiis accusamus aspernatur esse beatae possimus saepe officia, ipsam, quos laudantium consequatur voluptates debitis unde earum error dolorem, praesentium, corrupti quas!</p>
+            </div>
+         </article>
+        <article class="facebookarea">
+         <p>facebookarea埋め込み</p>
         </article>
     </main>
 
     <aside class="side">
-    <div class="bannerarea">書籍のご紹介
+    <div class="bannerarea">
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        <form action="" method="" class="magazine" ><input type="email" name="email" value="" placeholder=”メールアドレスを入力して下さい”>
+        <button type="button" name="magazine">登録</button>
+        </form>
+    おすすめの書籍
         <img src="images/book01.jpg" alt="書籍紹介" class="banner01">
+        <p>『里山を創生する「デザイン的思考」』岩佐十良 著</p>
         <img src="images/book02.jpg" alt="書籍紹介" class="banner02">
+         <p>『限界費用ゼロ社会』ジェレミー・リフキン著／柴田裕之訳</p>
         <img src="" alt="" class="banner03">
         <img src="" alt="" class="banner04">
     </div>
 
     </aside>
 </div><!-- /contents -->
+<div id="fb-root"></div>
 
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+    <footer>
+      <span class="link">footerarea</span>
+      <span class="credit">Copyright (C)　2016 copyrights.　gaialabo All Rights Reserved.</span>
+    </footer>
 </div><!-- /wrapper -->
-
-    <wrapper class="footer">
-        <footer>
-        <span class="link">footerarea</span>
-
-        </footer>
-    </wrapper>
-
 </body>
 </html>
