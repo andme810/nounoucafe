@@ -9,14 +9,5 @@
   "script": {
     "start": "gulp",
     "gulp": "gulp"
-  },
-  "name": "gulp",
-  "version": "1.0.0",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
